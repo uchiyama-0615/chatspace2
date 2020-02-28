@@ -1,0 +1,177 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  display:flex;
+  height:100vh;
+  width:100vw;
+}
+   .chat-side{
+     width:300px;
+     color:#fff;
+     float:left;
+       .side-header{
+         height:100px;
+         background-color:#253141;
+         display:flex;
+         align-items:center;
+         padding: 0 20px;
+         &__box{
+            width: 100%;
+            font-weight: bold;
+            background-color:#253141;
+            height:20px;
+            display:flex;
+            justify-content:space-between;
+            &__user-name{
+              font-weight:bold;
+              color:#fff;
+             }
+            &__menu{
+              width:60px;
+              display:flex;
+              &__new-group{
+               margin-left:0.3rem;
+               display:inline-block;
+              }
+              &__edit-user{
+                margin-left:0.3rem;
+                display:inline-block;
+              }
+              .icon{
+                color:#fff;
+                text-decoration:none;
+              }
+            }
+          }
+        }
+      .groups{
+        height:calc(100vh - 100px);
+        background-color:#2f3e51;
+        padding: 0 20px;
+        overflow:scroll;
+        .group{
+          padding:20px 0 40px;
+          &__name{
+            font-size:15px;
+            margin-bottom:5px;
+          }
+          &__message{
+            font-size:11px;
+          }
+        }
+      }
+    }     
+  .chat-main{
+    width:calc(100vw - 300px);
+    background-color:#ffffff;
+    float:left;
+      .main-header{
+        height:100px;
+        background-color:#ffffff;
+        border-bottom:solid 1px #eee;
+        padding: 0 40px;
+        display:flex;
+        justify-content: space-between;
+        overflow:scroll;
+        &__left-box{
+          margin-top: 35px;
+          &__current-group{
+            color:#333;
+            margin-bottom:15px;
+            font-size:20px;
+          }
+          &__member-list{
+            display:flex;
+            font-size: 12px;
+            color:#999;
+            &__member{
+              font-size:12px;
+              }
+            }
+        }
+        &__right-box{
+          color:#38aef0;
+          &__edit-btn{
+            height:40px;
+            line-height:40px;
+            padding:0 20px;
+            margin-top:30px;
+            border:solid 1px #38aef0;
+            position:absolute;
+            right:40px;
+          }
+        }
+      }
+      .messages{
+        height:calc(100vh - 190px);
+        background-color:#fafafa;
+        padding:46px 40px;
+        overflow:scroll;
+        &__message{
+          padding-bottom:40px;
+          &__upper-info{
+            display:flex;
+            margin-bottom: 10px;
+            &__talker{
+              color:#434a54;
+              font-size:16px;
+              font-weight:bold;
+            }
+            &__date{
+              color:#999999;
+              font-size:12px;
+              margin-left:10px;
+            }
+          }
+        }
+        &__message-text{
+          color:#434a54;
+          font-size:14px;
+          margin-bottom:10px;
+        }
+
+      }
+      .form{
+        height:90px;
+        padding:20px 40px;
+        background-color: #ddd;
+        &__new-message{
+          display:flex;
+          &__input-box{
+            position:relative;
+            width:100%;
+            &__text-box{
+              height:50px;
+              width:100%;
+              padding:0 40px 0 10px;
+              color:#434a54;
+              border-style:none;
+            }
+            &__image{
+              font-size:1.3rem;
+              position:absolute;
+              top: 10px;
+              right:10px;
+              cursor:pointer;
+            }
+            .hidden{
+              display:none;
+            }
+            }
+          &__submit{
+            width:100px;
+            height:50px;
+            padding:0 30px;
+            margin-left:15px;
+            background-color:#38aef0;
+            color:#fff;
+            cursor:pointer;
+          }
+        }
+     }    
+  }
+    
+
+  
+

@@ -1,0 +1,28 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %h3.side-header__box__user-name
+        内山
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          = link_to '#' do
+            = icon('fa','edit',class: 'icon')
+        %li.side-header__box__menu__edit-user
+          = link_to '#'  do
+            = icon('fa','cog',class: 'icon')
+  .groups
+    .group
+      %h3.groups__group__name
+        グループ名
+      %p.groups__group__message
+        メッセージ
+    .group
+      %h3.groups__group__name
+        グループ名
+      %p.groups__group__message
+        メッセージ
+
+      
+      
+    
+      
